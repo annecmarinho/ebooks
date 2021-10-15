@@ -1,8 +1,17 @@
-import React from "react";
+import{ React, useState} from "react";
 import {Form,Button} from "react-bootstrap"
 import "./Login.css"
+import { useHistory } from "react-router-dom";
 
 function Login(){
+
+  const[currentPage,setCurrentPage] = useState("/home");
+  const history = useHistory();
+
+  function handleClick(pathName) {
+    history.push(pathName);
+    setCurrentPage(pathName);
+}
     return (
 <div className="page">
     <Form>
@@ -22,8 +31,9 @@ function Login(){
     Login
   </Button>
      
-    <Button variant="link" style={{color:"#773344",fontFamily:"Overlock SC" }}>Esqueceu a senha?</Button>
-    <Button variant="link"  style={{color:"#773344",fontFamily:"Overlock SC"}}>Não possui cadastro? Cadastre-se!</Button>
+    <Button variant="link" style={{color:"#773344",fontFamily:"Overlock SC" }} >Esqueceu a senha?</Button>
+    <Button variant="link"  style={{color:"#773344",fontFamily:"Overlock SC"}} onClick={() => {
+            handleClick("/cadastro")}}>Não possui cadastro? Cadastre-se! </Button>
   
 
 
