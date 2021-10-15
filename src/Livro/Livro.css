@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 746px;
+    align-items: center;
+    background-color: #773344;
+    border-radius: 10px;
+    height: 59px;
+    top: 268px;
+    left: 553px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    max-width: 354px;
+    left: 566px;
+    height: 90px;
+    top: 357px;
+}
+.capa{
+    max-width: 346px;
+    height: 502px;
+    left: 182px;
+    top: 268px;
+    align-items: center;
+
+}
+
+
+.base{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
