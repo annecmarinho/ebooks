@@ -9,12 +9,12 @@ function Login(){
     <div className="container">
       
     <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>Email:</Form.Label>
+    <Form.Label style={{fontFamily:"Overlock SC"}}>Email:</Form.Label>
     <Form.Control type="email" />
   </Form.Group>
 
   <Form.Group className="mb-3" controlId="formBasicSenha">
-    <Form.Label>Senha:</Form.Label>
+    <Form.Label style={{fontFamily:"Overlock SC"}}>Senha:</Form.Label>
     <Form.Control type="password" />
   </Form.Group>
     

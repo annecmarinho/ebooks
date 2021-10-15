@@ -1,8 +1,8 @@
 .container{
-
-max-width: 1116 px;
-margin: 0 auto;
+margin-left: 162px;
+margin-right:162px;
 display: flex;
+width: 1116px;
 height: 436px;
 left: 162px;
 top: 457px;
