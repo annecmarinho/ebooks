@@ -1,0 +1,33 @@
+.list{
+width: 200px;
+background-color:#c2948A ;
+height: 100%;
+    }
+
+.conjunto{
+    display:flex;
+    align-items: center;
+    
+}
+.Logo{
+font-family: Salsa;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 44px;
+display:flex;
+align-items: center;
+color: #FFFFFF;
+margin-bottom: 0;
+}
+.Saturno{
+    width: 129px;
+    height: 80px;
+}
+
+.buttons{
+    display:flex;
+    align-items: center;
+    margin-left: auto;
+}
+
