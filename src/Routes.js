@@ -1,9 +1,9 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom"
 import Biblioteca from "./Biblioteca";
-import Cadastro from "./Cadastro/Cadastro";
-import Home from "./Home/Home";
-import Login from "./Login/Login";
+import Cadastro from "./Cadastro";
+import Home from "./Home";
+import Login from "./Login";
 import Livro from "./Livro";
 import Perfil from "./Perfil";
 

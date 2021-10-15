@@ -1,7 +1,11 @@
 import React from "react";
 
 function Perfil(){
-    return <h1>Perfil</h1>
+    return (
+        <div>
+            <h1>Perfil</h1>
+        </div>
+    )
 }
 
 export default Perfil;
