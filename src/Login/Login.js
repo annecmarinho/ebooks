@@ -18,18 +18,13 @@ function Login(){
     <Form.Control type="password" />
   </Form.Group>
     
+  <Button variant="primary" size="lg" style={{backgroundColor:"#773344",fontFamily:"Overlock SC" }}>
+    Login
+  </Button>
+     
+    <Button variant="link" style={{color:"#773344",fontFamily:"Overlock SC" }}>Esqueceu a senha?</Button>
+    <Button variant="link"  style={{color:"#773344",fontFamily:"Overlock SC"}}>Não possui cadastro? Cadastre-se!</Button>
   
-    
- 
-
-  <div className="button-login">
-    <button>Login</button>
-    </div>
-
-    <div className="button-extra">
-    <Button variant="link">Esqueceu a senha?</Button>
-    <Button variant="link">Não possui cadastro? Cadastre-se!</Button>
-    </div>
 
 
 </div>  
