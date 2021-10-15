@@ -1,0 +1,31 @@
+.Carrossel{
+width: 236px;
+height: 352px;
+left: 960px;
+top: 314px;
+    
+}
+
+.Bloco1{
+display:flex;
+max-width: 1116px;
+height: 477px;
+left: 20px;
+top: 400px;
+background: #C4C4C4;
+border-radius: 19px;
+}
+.título{
+width: 250px;
+font-family: Overlock SC;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 35px;
+
+color: #EEF4ED;
+background: #773344;
+border-radius: 10px;
+margin-bottom:0;
+
+}
