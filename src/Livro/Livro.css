@@ -1,35 +1,111 @@
-.container{
-    display: flex;
-    flex-direction: row;
-    max-width: 746px;
-    align-items: center;
+.titulo_livro{
+    text-align: center;
+    color:white;
+    font-size: 18px;
+    position: absolute;
+    width: 746px;
     background-color: #773344;
     border-radius: 10px;
     height: 59px;
-    top: 268px;
-    left: 553px;
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    max-width: 354px;
     left: 566px;
+    top: 43px;
+}
+.info_livro{
+    font-size: 14px;
+    position: absolute;
+    flex-direction: column;
+    left: 566px;
+    width: 354px;
     height: 90px;
-    top: 357px;
+    top: 132px;
 }
 .capa{
+    position: absolute;
     max-width: 346px;
     height: 502px;
     left: 182px;
-    top: 268px;
-    align-items: center;
+    top: 43px;
 
 }
-
-
 .base{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.center{
+    position: absolute;
+    background-color: #E5E5E5;
+    width: 100%;
+    top: 225px;
+    height: 588px;
+}
+.sinopse{
+    font-size: 12px;
+    position: absolute;
+    left: 566px;
+    width: 713px;
+    height: 235px;
+    top: 235px;
+
+}
+
+.center_comment{
+    top: 867px;
+    position: absolute;
+    height:692.22px;
+    background-color:#C2948A;
+    width:100%;
+
+}
+.titulo_comment{
+    font-size: 18px;
+    position: absolute;
+    left: 84px;
+    width: 600px;
+    height: 58px;
+    top: 39px;
+}
+.comment1{
+    font-size: 14px;
+    position: absolute;
+    left: 84px;
+    width: 1095px;
+    height: 150px;
+    top: 125px;
+}
+.aut_comment1{
+    font-size: 14px;
+    position: absolute;
+    left: 84px;
+    width: 1095px;
+    height: 28px;
+    top: 300px;
+}
+.comment2{
+    font-size: 14px;
+    position: absolute;
+    left: 84px;
+    width: 1095px;
+    height: 150px;
+    top: 390px;
+}
+.aut_comment2{
+    font-size: 14px;
+    position: absolute;
+    left: 84px;
+    width: 1095px;
+    height: 28px;
+    top: 610px;
+}
+.fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .fa:hover {
+    color: darkblue;
+  }
+
