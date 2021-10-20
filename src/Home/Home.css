@@ -1,31 +1,52 @@
+
+
 .Carrossel{
-width: 236px;
-height: 352px;
-left: 960px;
-top: 314px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.Bloco1{
-display:flex;
-max-width: 1116px;
-height: 477px;
-left: 20px;
-top: 400px;
-background: #C4C4C4;
-border-radius: 19px;
+
+.PaginaHome{
+    display: flex;
+    flex-direction: column;
 }
-.título{
-width: 250px;
+.Sobre{
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    width: 1400px;
+    height: 500px;
+    left: 0px;
+    top: 600px;
+    align-items: center;
+    background-color :#c2948a;;
+
+}
+
+.SobreText{
+margin-top: 50px;
+margin-left: 100px;
+margin-right: 100px;
+font-family: Overlock;
+font-style: normal;
+font-size: 30px;
+line-height: 45px;
+}
+
+.Title{
+justify-content: center;
+display: flex;
+width: 30vw;
+align-items: center;
 font-family: Overlock SC;
 font-style: normal;
 font-weight: normal;
 font-size: 25px;
 line-height: 35px;
-
+margin: 40px 0 -60px 0;
 color: #EEF4ED;
 background: #773344;
 border-radius: 10px;
-margin-bottom:0;
 
 }
