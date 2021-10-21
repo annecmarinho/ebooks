@@ -4,7 +4,14 @@ import "./Login.css"
 import { useHistory } from "react-router-dom";
 
 function Login(){
+  const[email,setEmail]=useState();
+  const [password,setPassword]= useState();
+  
 
+function login(){
+  alert("Bem vindo!" + email);
+  handleClick("home");
+}
   const[currentPage,setCurrentPage] = useState("/home");
   const history = useHistory();
 
@@ -19,15 +26,15 @@ function Login(){
       
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label style={{fontFamily:"Overlock SC"}}>Email:</Form.Label>
-    <Form.Control type="email" />
+    <Form.Control type="email" onChange={(e)=>setEmail(e.target.value)}/>
   </Form.Group>
 
   <Form.Group className="mb-3" controlId="formBasicSenha">
     <Form.Label style={{fontFamily:"Overlock SC"}}>Senha:</Form.Label>
-    <Form.Control type="password" />
+    <Form.Control type="password" onChange={(e)=>setPassword(e.target.value)}/>
   </Form.Group>
     
-  <Button variant="primary" size="lg" style={{backgroundColor:"#773344",fontFamily:"Overlock SC" }}>
+  <Button variant="primary" size="lg" style={{backgroundColor:"#773344",fontFamily:"Overlock SC" }} onClick={login}>
     Login
   </Button>
      
