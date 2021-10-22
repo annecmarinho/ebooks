@@ -86,8 +86,8 @@ function Home(){
 
             <div className="Fotos">
               <img src="/images/Metamorfose 1.png" className="imagens"/>
-              <img src="/images/crimeecastigo.jpg" className="imagens" style={{marginLeft:"16px"}}/>
-              <img src="/images/2.png" className="imagens" style={{marginLeft:"16px", width:"195px"}}/>
+              <img src="/images/crimeecastigo.jpg" className="imagens"/>
+              <img src="/images/2.png" className="imagens"/>
             </div>
 
               <Button variant="link" 
@@ -105,9 +105,9 @@ function Home(){
            <p className="TítuloCategoria">Romance</p>
 
            <div className="Fotos">
-            <img src="/images/1.png" className="imagens" style={{width:"185px"}}/>
-            <img src="/images/Morrodosventosuivantes 1.png" className="imagens" style={{marginLeft:"16px"}}/>
-            <img src="/images/capa-a seleção 1.png" className="imagens" style={{marginLeft:"16px"}}/>
+            <img src="/images/1.png" className="imagens" />
+            <img src="/images/Morrodosventosuivantes 1.png" className="imagens" />
+            <img src="/images/capa-a seleção 1.png" className="imagens" />
            </div>
 
           <Button variant="link"
@@ -126,8 +126,8 @@ function Home(){
 
                <div className="Fotos">
                 <img src="/images/Cortiço 1.png" className="imagens"/>
-                <img src="/images/Dom casmurro 1.png" className="imagens" style={{marginLeft:"16px"}}/>
-                <img src="/images/quartodedespejo.jpg" className="imagens" style={{marginLeft:"16px", width:"180px"}}/>
+                <img src="/images/Dom casmurro 1.png" className="imagens" />
+                <img src="/images/quartodedespejo.jpg" className="imagens" />
                </div>
 
             <Button variant="link" 
@@ -145,9 +145,9 @@ function Home(){
           <p className="TítuloCategoria">Bibliografias</p>
 
           <div className="Fotos">
-           <img src="/images/Ritalee (1) 1 (1).png" className="imagens" style={{width:"184px"}}/>
-           <img src="/images/capa-diana 1 (1).png" className="imagens" style={{marginLeft:"16px",width:"190px"}}/>
-           <img src="/images/capa-nelson mandela 1.png" className="imagens" style={{marginLeft:"16px", width:"184px"}}/>
+           <img src="/images/Ritalee (1) 1 (1).png" className="imagens" />
+           <img src="/images/capa-diana 1 (1).png" className="imagens" />
+           <img src="/images/capa-nelson mandela 1.png" className="imagens" />
          </div>
 
            <Button variant="link" 
