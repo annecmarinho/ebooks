@@ -1,0 +1,43 @@
+.Page{
+  min-height: 100%;
+  height: max-content;
+}
+.Filtro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
+.Livros{
+  display: flex;
+  flex-direction: row;
+  margin-left: 11.1%;
+}
+
+.Botoes{
+  width: 150px;
+  height: 245.73px;
+  background-color: #e5e5e5;
+  margin-top: 15px;
+  border: 0px;
+}
+
+.Botoes:hover{
+    filter:brightness(70%);
+}
+
+.Botoes h1{
+    margin-top: 2px;
+    font-family: 'overlock SC';
+    font-size: 15px;
+    font-weight:500;
+}
+
+.Botoes img{
+  margin-top: 6.16%;
+  width: 126.1px;
+  height: 176.3px;
+}

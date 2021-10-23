@@ -7,6 +7,7 @@ import Login from "./Login/Login";
 import Livro from "./Livro";
 import Perfil from "./Perfil";
 import Menu from "./Menu";
+import Footer from "./Footer";
 
 function Routes(){
     return(
@@ -29,6 +30,7 @@ function UserMenu(){
         <Route  path="/cadastro" component={Cadastro}/>
         <Route component={()=><Redirect to="/home"/>}/>
          </Switch>
+         <Footer/>
          </Menu>
 
     );
