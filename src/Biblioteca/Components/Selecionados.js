@@ -5,15 +5,16 @@ function Selecionados ({ selecionados }) {
   const [showWarning, setShowWarning] = useState(false);
 
   useEffect(() => {
-      setFiltros(selecionados);
+      const newFiltros = [];
 
-      if(selecionados.length >=1){
-        setShowWarning(true);
-      } else {
-        setShowWarning(false);
+      for (let i = 0; i < selecionados.length && i < 1; i++) {
+        const element = selecionados[i];
+        newFiltros.push(element)
       }
 
+      setFiltros(newFiltros);
 
+      setShowWarning(selecionados.length >= 1);
   }, [selecionados]);
 
   return (
