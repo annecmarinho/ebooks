@@ -2,6 +2,11 @@
     display: flex;
     position: relative;
 }
+
+.Rodape img{
+    width: 210.1px;
+    height: 200px;
+}
 .Footer{
     display: flex;
     background: #333333;
