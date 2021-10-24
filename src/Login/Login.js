@@ -1,46 +1,43 @@
-import{ React, useState} from "react";
+import React from "react";
 import {Form,Button} from "react-bootstrap"
 import "./Login.css"
-import { useHistory } from "react-router-dom";
 
 function Login(){
-  const[email,setEmail]=useState();
-  const [password,setPassword]= useState();
-  
-
-function login(){
-  alert("Bem vindo!" + email);
-  handleClick("home");
-}
-  const[currentPage,setCurrentPage] = useState("/home");
-  const history = useHistory();
-
-  function handleClick(pathName) {
-    history.push(pathName);
-    setCurrentPage(pathName);
-}
     return (
 <div className="page">
-    <Form>
+    <Form style={{width:"600px"}}>
     <div className="container">
+    <h1>Login</h1>
       
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label style={{fontFamily:"Overlock SC"}}>Email:</Form.Label>
-    <Form.Control type="email" onChange={(e)=>setEmail(e.target.value)}/>
+    <Form.Group className="mb-3" controlId="formBasicEmail" style={{width:"420px", marginTop:"30px"}}>
+    <Form.Control type="email" placeholder="E-mail" />
   </Form.Group>
 
-  <Form.Group className="mb-3" controlId="formBasicSenha">
-    <Form.Label style={{fontFamily:"Overlock SC"}}>Senha:</Form.Label>
-    <Form.Control type="password" onChange={(e)=>setPassword(e.target.value)}/>
+  <Form.Group className="mb-3" controlId="formBasicSenha" style={{width:"420px", }}>
+    <Form.Control type="password" placeholder="Senha" />
   </Form.Group>
     
-  <Button variant="primary" size="lg" style={{backgroundColor:"#773344",fontFamily:"Overlock SC" }} onClick={login}>
+  <Button 
+    className="BotaoLogin"
+    variant="primary" 
+    size="lg" 
+    style={{
+      border:" 1px solid #333333",
+      backgroundColor:"#773344",
+      fontFamily:"Overlock SC", 
+      width:"420px", 
+      marginBottom:"20px", 
+      height:"38px", 
+      display:"flex", 
+      alignItems:"center", 
+      justifyContent:"center"
+    }}
+  >
     Login
   </Button>
      
-    <Button variant="link" style={{color:"#773344",fontFamily:"Overlock SC" }} >Esqueceu a senha?</Button>
-    <Button variant="link"  style={{color:"#773344",fontFamily:"Overlock SC"}} onClick={() => {
-            handleClick("/cadastro")}}>Não possui cadastro? Cadastre-se! </Button>
+    <Button variant="link" style={{color:"#773344",fontFamily:"Overlock SC", lineHeight:"10px" }}>Esqueceu a senha?</Button>
+    <Button variant="link"  style={{color:"#773344",fontFamily:"Overlock SC"}}>Não possui cadastro? Cadastre-se!</Button>
   
 
 
