@@ -1,83 +1,74 @@
-.titulo_livro {
-  text-align: center;
-  color: #773344;
-  position: relative;
-  width: 746px;
-  height: 59px;
-  left: 566px;
-  top: 43px;
-}
-.titulo_livro h1 {
-  font-size: 2em;
-}
 
-.capa {
-  position: absolute;
-  max-width: 346px;
-  height: 502px;
-  left: 182px;
-  top: 43px;
-}
 .base {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .center {
-  position: relative;
+  display:flex;
+  align-items: center;
+  flex-direction: row;
   background-color: #c4c4c4;
   width: 100%;
-  top: 0vh;
   height: 588px;
+  margin-top: 70vh;
 }
+.capa {
+ max-width: 346px;
+ margin-left: 10px;
+}
+
+.texto_livro{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 30px 30px 70px;
+
+}
+.titulo_livro {
+  
+  text-align: center;
+  color: #773344;
+  width: 500px;
+  font-size: 1.5em;
+}
+
+.descricao_livro {
+  width: 700px;
+}
+.descricao_livro h1{
+  font-size: 1.2em;
+}
+
 
 .center_comment {
-  top: 900px;
-  position: absolute;
-  height: 692.22px;
+  display:flex;
+  flex-direction: column;
   background-color: #c2948a;
   width: 100%;
+
 }
 .titulo_comment {
-  font-size: 10px;
-  position: relative;
-  left: 84px;
-  width: 1200px;
-  height: 58px;
-  top: 39px;
+  width: 80%;
+  margin: 1.5em 1.5em 1.5em 1.5em;
+}
+.titulo_comment h1 {
+  font-size: 1.5em;
 }
 
-.titulo_comment h1 {
-  font-size: 2.5em;
-}
-.comentario {
-  position: absolute;
-  left: 84px;
-  width: 1095px;
-  height: 150px;
-  top: 125px;
-}
 
 hr {
-  display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid black;
   margin: 1em 0;
   padding: 0;
 }
-.descricao_livro {
-  position: relative;
-  left: 566px;
-  width: 750px;
-  height: 90px;
-  top: 79px;
-}
-.descricao_livro h1 {
-  font-size: 1.2em;
-}
+
+
 .btn {
   background-color: #773344;
   border-color: black;
@@ -88,5 +79,5 @@ hr {
   cursor: pointer;
 }
 .btn:hover {
-  background-color: #ad586d;
+  background-color: #773344;
 }

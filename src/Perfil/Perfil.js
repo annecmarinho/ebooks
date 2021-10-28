@@ -92,9 +92,9 @@ function Perfil() {
                             );
                         })}
                     </div>
-                </div>
+                
 
-                <div className="ebooksalvos">
+                
 
                     <div className="section2">
 

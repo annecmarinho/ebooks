@@ -31,14 +31,14 @@ function Livro() {
                 <div className="capa">
                     <img src="/images/ebook.png" alt="ebook"></img>
                 </div>
-                <div className="titulo_livro">
-                    <h1> Os Homens que Não Amavam as Mulheres</h1>
-                </div>
+                <div className="texto_livro">
+                    <h1 className="titulo_livro"> Os Homens que Não Amavam as Mulheres</h1>
                 <div className="descricao_livro">
                     < Descricao_livro {...homensmulheres} />
                     <IconContext.Provider value={{ size: "1.5em" }}>
                         <button class="btn"> <RiHeartAddFill /> </button> &nbsp;
                     </IconContext.Provider>
+                </div>
                 </div>
             </div>
 
