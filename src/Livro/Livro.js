@@ -1,6 +1,6 @@
 import React from "react";
 import "./Livro.css"
-import { AiFillDislike, AiFillLike } from 'react-icons/ai';
+import { RiHeartAddFill } from 'react-icons/ri';
 import { IconContext } from 'react-icons/lib'
 import Descricao_livro from "../Descricao_livro";
 import Comentario from "../Comentarios";
@@ -35,11 +35,9 @@ function Livro() {
                     <h1> Os Homens que Não Amavam as Mulheres</h1>
                 </div>
                 <div className="descricao_livro">
-                    < Descricao_livro {...homensmulheres} /><br />
+                    < Descricao_livro {...homensmulheres} />
                     <IconContext.Provider value={{ size: "1.5em" }}>
-                        <button class="btn"> <AiFillLike /> </button> &nbsp;
-                        <button class="btn"> <AiFillDislike /> </button>
-
+                        <button class="btn"> <RiHeartAddFill /> </button> &nbsp;
                     </IconContext.Provider>
                 </div>
             </div>

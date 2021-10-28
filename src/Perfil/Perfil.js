@@ -52,12 +52,12 @@ function Perfil() {
             <div className="meuperfil">
                 <h1> Meu Perfil</h1>
             </div>
-            <div className="titsobremim">
-                <h1> Sobre Mim </h1>
-            </div>
+            <div className="descperfil">
+                <h1 > Sobre Mim </h1></div>
             <div className="sobremim">
-                <h1>“ Pellentesque vehicula facilisis odio, ac vestibulum metus rutrum varius. Mauris leo velit, vehicula non odio non, rhoncus efficitur orci. Maecenas sollicitudin imperdiet nunc. Pellentesque sit amet leo semper nisl feugiat porta et egestas dolor. Phasellus scelerisque convallis erat, vitae venenatis tellus interdum ac. Praesent quis auctor ante, a mattis risus. </h1>
+                <h1>“ Pellentesque vehicula facilisis odio, ac vestibulum metus rutrum varius. Mauris leo velit, vehicula non odio non, rhoncus efficitur orci. Maecenas sollicitudin imperdiet nunc. Pellentesque sit amet leo semper nisl feugiat porta et egestas dolor. Phasellus scelerisque convallis erat, vitae venenatis tellus interdum ac. Praesent quis auctor ante, a mattis risus." </h1>
             </div>
+
             <div className="detalhes">
                 <h1> Detalhes </h1>
             </div>
@@ -79,7 +79,7 @@ function Perfil() {
             <div className="partebook">
 
                 <div className="ebooklido">
-                    <h1> EBOOKS JÁ LIDOS: </h1><br />
+                    <h1 className="titlesalvo"> SALVOS PARA LER: </h1><br />
 
                     <div className="section1">
 
@@ -95,7 +95,7 @@ function Perfil() {
                 </div>
 
                 <div className="ebooksalvos">
-                    <h1> SALVOS PARA LER: </h1><br />
+
                     <div className="section2">
 
                         {livrosalvo.map((livro) => {
