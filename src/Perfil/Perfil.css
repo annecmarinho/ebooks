@@ -3,28 +3,13 @@
   display: flex;
   width: 100%;
 }
-.section2 {
-  width: min-content;
-  display: flex;
-  margin-left: 5px;
-  margin-right: 5px;
-  flex-direction: row;
-  top: 254vh;
-}
-.section1 {
-  width: min-content;
-  top: 158vh;
-  display: flex;
-  margin-left: 5px;
-  margin-right: 5px;
-  flex-direction: row;
-}
 .fundo {
+  max-width: 80%;
+  display: block;
+  height: auto;
   align-items: center;
-  width: 35vh;
-  height: 45vh;
   background-color: #773344;
-  margin-left: 10vh;
+  margin-left: 5vh;
   margin-bottom: 10vh;
 }
 .fundo:hover {
@@ -33,134 +18,188 @@
 .fundo h1 {
   margin-top: 0.5em;
   font-family: "overlock SC";
-  font-size: 1em;
+  font-size: clamp(0.5em, 0.5em + 1vw, 1.5em);
+  max-height: 220px;
+  text-overflow: ellipsis;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.img {
+  max-width: 100%;
+  max-height: 75%;
 }
 
 .fundo img {
   margin-top: 1em;
   width: 75%;
-  height: 75%;
+  height: auto;
 }
-.meuperfil {
+.perfil {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8%;
+  padding: 10%;
+  height: auto;
+}
+.circle {
+  border-radius: 50%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.parteebook {
   position: absolute;
-  display: flex;
-  width: 56vh;
-  height: 7.5vh;
-  left: 81.3vh;
-  top: 15vh;
-  justify-content: center;
-  align-items: center;
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 59px;
-  text-align: center;
-  color: #773344;
+  width: 100%;
+  height: auto;
+  top: 115vh;
+  background: #c2948a;
+  border-radius: 1%;
+  margin: auto;
 }
 
 .sobremim {
-  top: 22vh;
-  left: 18vh;
-  position: relative;
-  height: 465px;
-  width: 58.6vh;
-}
-.sobremim h1 {
-  font-size: 1.5em;
-  left: 18vh;
-}
-.descperfil {
   display: flex;
   flex-direction: column;
-  width: 62vh;
-  left: 18vh;
-  height: 15vh;
-  top: 25vh;
-  position: absolute;
 }
-.descperfil h1 {
+.sobremim h1 {
+  align-items: center;
   font-family: Overlock SC;
+  font-weight: normal;
   color: #773344;
-  left: 18vh;
-  font-size: 2.5em;
+  font-size: clamp(2em, 1em + 1vw, 2.5em);
+}
+.sobremim h2 {
+  align-items: center;
+  font-family: Overlock SC;
+  font-size: 1.5em;
+  font-weight: normal;
+  font-size: clamp(0.5em, 1em + 1vw, 1.5em);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 14;
+  -webkit-box-orient: vertical;
 }
 .detalhes {
-  height: auto;
-  position: absolute;
-  width: 50vh;
-  max-width: 58.6vh;
-  height: 15vh;
-  top: 27vh;
-  left: 148.55vh;
+  top: 300px;
   display: flex;
-  font-family: Overlock SC;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1em;
-  line-height: 44px;
-  color: #773344;
+  flex-direction: column;
 }
-.detalhes2 {
-  font-size: 0.5em;
-  top: 35vh;
-  left: 148.55vh;
-  position: absolute;
-  height: 465px;
-  width: 58.6vh;
-}
-.detalhes2 h1 {
-  font-size: 3em;
-  left: 148.55vh;
-}
-
-.circle {
-  justify-content: center;
+.detalhes h2 {
   align-items: center;
-  position: absolute;
-  width: 36vh;
-  height: 36vh;
-  left: 91.6vh;
-  top: 35vh;
-  border-radius: 50%;
-}
-.partebook {
-  position: absolute;
-  width: 100%;
-  height: 172vh;
-  top: 145vh;
-  background: #c2948a;
-  border-radius: 1%;
-}
-.ebooklido {
-  position: relative;
-  width: 100vh;
-  height: 4.7vh;
-  left: 10vh;
-  top: 30px;
-  margin: 0px 10px;
   font-family: Overlock SC;
-  font-size: 1em;
-  font-weight: 1000;
+  font-weight: normal;
+  color: #773344;
+  font-size: clamp(2em, 1em + 1vw, 2.5em);
+  max-width: 550px;
 }
-.ebooksalvos {
-  position: relative;
-  width: 100vh;
-  height: 4.7vh;
-  left: 10vh;
-  top: 430px;
+.detalhes h1 {
+  align-items: center;
   font-family: Overlock SC;
-  font-size: 1em;
-  font-weight: 1000;
-  line-height: 30px;
+  font-weight: normal;
+  font-size: clamp(0.5em, 2em + 1vw, 1.5em);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.meuperfil h1 {
+  font-family: Overlock SC;
+  font-weight: normal;
+  color: #773344;
   text-align: center;
-
-  color: #000000;
-  margin: 0px 10px;
+  font-size: clamp(2.5em, 2em + 1vw, 3em);
 }
 
-.img {
-  max-width: 100%;
-  max-height: 75%;
+.meuperfil {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.titlesalvo {
+  font-family: Overlock SC;
+  font-size: clamp(1em, 1em + 1.5vw, 3em);
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0.8em;
+}
+.ebookssalvos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 916px) {
+  .ebookssalvos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .perfil {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fundo {
+    top: 250vh;
+    max-width: 65%;
+    display: block;
+    height: auto;
+    align-items: center;
+    background-color: #773344;
+    margin-bottom: 5vh;
+  }
+  .sobremim h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+  }
+  .circle {
+    max-width: 85%;
+    display: block;
+    height: auto;
+  }
+}
+@media (max-width: 450px) {
+  .parteebook {
+    top: 170vh;
+  }
+  .ebookssalvos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .perfil {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .meuperfil {
+    grid-row: 1;
+  }
+  .circle {
+    max-width: 50%;
+    display: block;
+    height: auto;
+  }
+  .fundo {
+    max-width: 50%;
+    display: block;
+    height: auto;
+    align-items: center;
+    background-color: #773344;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+  .detalhes h1 {
+    font-size: clamp(0.5em, 1em + 1vw, 1.5em);
+  }
+  .sobremim h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+  }
 }
