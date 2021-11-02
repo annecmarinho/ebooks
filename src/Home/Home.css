@@ -24,7 +24,8 @@
     background-color :#c2948a;;
 }
 
-.SobreText{
+.Sobre p{
+display:flex;
 margin-top: 50px;
 margin-left: 100px;
 margin-right: 100px;

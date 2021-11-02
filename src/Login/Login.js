@@ -1,8 +1,35 @@
-import React from "react";
-import { Form, Button } from "react-bootstrap"
-import "./Login.css"
+import {React, useState} from "react";
+import { Form, Button } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
+import api from"../services/api";
+import {login} from "../services/auth"
+import "./Login.css";
 
 function Login() {
+
+  const [email,setEmail] = useState();
+  const [password,setPassword] = useState();
+  const history = useHistory();
+
+  async function handleLogin(e){
+    e.preventDefault();
+    try{
+      const response = await api.post('/login',{email,password});
+      alert ("Bem vindo", response.data.user.name );
+      login(response.data.acessToken)
+      history.pushState("home");
+      
+    }catch(error){
+      if(error.response.status === 403){
+        alert ("Credenciais Invalidas!");
+      }else{
+        alert(error.response.data.notification);
+      }
+      console.warn(error);
+      
+    }
+ 
+  }
   return (
     <div className="page">
       <Form style={{ width: "600px" }}>
@@ -32,6 +59,7 @@ function Login() {
               alignItems: "center",
               justifyContent: "center"
             }}
+            onClick={handleLogin}
           >
             Login
           </Button>
