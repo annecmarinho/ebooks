@@ -28,7 +28,7 @@ function Livro() {
         <div className="base">
 
             <div className="center">
-                <div className="capa">
+                <div className="capax">
                     <img src="/images/ebook.png" alt="ebook"></img>
                 </div>
                 <div className="texto_livro">
