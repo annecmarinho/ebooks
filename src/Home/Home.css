@@ -22,18 +22,7 @@
   /* align-items: center; */
   background-color: #c2948a;
 }
-<<<<<<< HEAD
 
-.Sobre p{
-display:flex;
-margin-top: 50px;
-margin-left: 100px;
-margin-right: 100px;
-font-family: Overlock;
-font-style: normal;
-font-size: 1.5em;
-line-height: 45px;
-=======
 .Sobre img {
   align-items: center;
   height: 100%;
@@ -49,7 +38,7 @@ line-height: 45px;
   font-style: normal;
   font-size: clamp(0.5em, 0.5em + 1.5vw, 1.5em);
   line-height: 6.9vh;
->>>>>>> master
+
 }
 
 .Title {

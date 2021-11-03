@@ -1,26 +1,33 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom";
+import api from "../services/api";
 import "./Cadastro.css";
 
 function Cadastro() {
 
-    const [membro, setMembro] = useState({});
+    const [state, setState] = useState();
     const history = useHistory();
 
-    function handleInputChange(e) {
-        const key = e.target.name;
 
-        const newMembro = { ...membro };
-        newMembro[key] = e.target.value;
+    function handleChange(e) { setState({ ...state, [e.target.name]: e.target.value }); }
 
-        setMembro(newMembro);
-        console.log(newMembro);
+    function handleCadastro(e) {
+        e.preventDefault();
+
+        if (state.password == state.confirmar) {
+            delete state.confirmar;
+
+            api
+                .post('/users', state)
+                .then(() => alert("Cadastrado com sucesso."))
+                .catch((e) => alert("Erro"))
+            history.push("/login");
+
+
+        } else { alert("Senhas diferentes.") }
     }
 
-    function cadastro() {
-        alert("Bem vindo!\n");
-        history.push("Home");
-    }
+
 
     return (
         <div className="Base">
@@ -32,52 +39,59 @@ function Cadastro() {
                             <input
                                 placeholder="Nome"
                                 name="nome"
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                             />
                             <input
                                 placeholder="E-mail"
                                 name="email"
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                                 type="email"
                             />
                             <input
                                 placeholder="Senha"
-                                name="senha"
-                                onChange={handleInputChange}
+                                name="password"
+                                onChange={handleChange}
                                 type="password"
                             />
                             <input
                                 placeholder="Confirmar senha"
                                 name="confirmar"
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                                 type="password"
+                            />
+                            <input
+                                placeholder="Fale um pouco sobre você"
+                                name="descricao"
+                                onChange={handleChange}
+                                type="descrição"
                             />
                         </div>
                         <div className="Endereco">
                             <input
                                 placeholder="Endereço"
                                 name="endereço"
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                             />
                             <input
                                 placeholder="Numero"
-                                name="ñumero"
-                                onChange={handleInputChange}
+                                name="número"
+                                onChange={handleChange}
                             />
                         </div>
                         <div className="Cidade">
                             <input
                                 placeholder="Cidade"
                                 name="cidade"
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                             />
                             <input
                                 placeholder="Estado"
                                 name="estado"
-                                onChange={handleInputChange}
+                                onChange={handleChange}
                             />
                         </div>
-                        <button className="Botao" type="submit" onClick={cadastro}>Finalizar cadastro</button>
+
+                        <button className="Botao" type="submit" onClick={handleCadastro}>Finalizar cadastro</button>
                     </div>
                 </form>
             </div>

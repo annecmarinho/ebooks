@@ -75,10 +75,7 @@ function Home() {
         </div>
 
         <div className="Sobre" >
-<<<<<<< HEAD
-          <img style={{ width: "1500px", height: "500px" }} src="/images/Frame 2.png" />
-          <p>A plataforma Planet Books tem como objetivo te ajudar a manter o hábito da leitura, disponibilizando uma biblioteca diversificada. Ao acessar os livros, o usuário pode salvar aqueles que mais gostou e acessá-los depois na sua página de perfil.É importante que vocês se mantenham sempre atualizados às novidades para não perderem nenhum livro novo. Estamos animados para ler com você, agora nos vemos em outros planetas e realidades, boa viagem!
-=======
+  
           <img style={{ maxwidth: "100%" }} src="/images/Frame 2.png" />
           <p>A plataforma Planet Books tem como objetivo te ajudar a manter o hábito da leitura, disponibilizando uma biblioteca diversificada. Ao acessar os livros, o usuário pode salvar aqueles que mais gostou e acessá-los depois na sua página de perfil.É importante que vocês se mantenham sempre atualizados às novidades para não perderem nenhum livro novo. Estamos animados para ler com você, agora nos vemos em outros planetas e realidades, boa viagem!
           </p>
