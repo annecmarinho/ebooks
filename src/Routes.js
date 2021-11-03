@@ -27,6 +27,7 @@ const PrivateRoute = ({ component: Component, ...rest}) =>(
    /> 
 );
 
+
 function Routes() {
     return (
         <BrowserRouter>
