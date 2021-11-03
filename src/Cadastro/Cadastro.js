@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom"
 import "./Cadastro.css";
 
-function Cadastro(){
+function Cadastro() {
 
     const [membro, setMembro] = useState({});
     const history = useHistory();
@@ -10,18 +10,18 @@ function Cadastro(){
     function handleInputChange(e) {
         const key = e.target.name;
 
-        const newMembro = {...membro};
+        const newMembro = { ...membro };
         newMembro[key] = e.target.value;
 
         setMembro(newMembro);
         console.log(newMembro);
     }
 
-    function cadastro(){
+    function cadastro() {
         alert("Bem vindo!\n");
         history.push("Home");
     }
-    
+
     return (
         <div className="Base">
             <div className="Conteiner">
@@ -29,55 +29,55 @@ function Cadastro(){
                     <div className="inputs">
                         <h1 className="Titulo">Cadastro</h1>
                         <div className="Dados">
-                            <input 
+                            <input
                                 placeholder="Nome"
                                 name="nome"
-                                onChange={handleInputChange} 
+                                onChange={handleInputChange}
                             />
-                            <input 
+                            <input
                                 placeholder="E-mail"
                                 name="email"
-                                onChange={handleInputChange} 
+                                onChange={handleInputChange}
                                 type="email"
                             />
-                            <input 
+                            <input
                                 placeholder="Senha"
                                 name="senha"
-                                onChange={handleInputChange} 
+                                onChange={handleInputChange}
                                 type="password"
                             />
-                            <input 
+                            <input
                                 placeholder="Confirmar senha"
                                 name="confirmar"
-                                onChange={handleInputChange} 
+                                onChange={handleInputChange}
                                 type="password"
                             />
                         </div>
                         <div className="Endereco">
-                            <input 
+                            <input
                                 placeholder="Endereço"
                                 name="endereço"
-                                onChange={handleInputChange} 
+                                onChange={handleInputChange}
                             />
-                            <input 
+                            <input
                                 placeholder="Numero"
                                 name="ñumero"
-                                onChange={handleInputChange} 
+                                onChange={handleInputChange}
                             />
                         </div>
                         <div className="Cidade">
-                            <input 
+                            <input
                                 placeholder="Cidade"
                                 name="cidade"
-                                onChange={handleInputChange} 
+                                onChange={handleInputChange}
                             />
-                            <input 
+                            <input
                                 placeholder="Estado"
                                 name="estado"
                                 onChange={handleInputChange}
                             />
                         </div>
-                        <button className="Botao" type="submit" onClick={cadastro}>Finalizar cadastro</button> 
+                        <button className="Botao" type="submit" onClick={cadastro}>Finalizar cadastro</button>
                     </div>
                 </form>
             </div>

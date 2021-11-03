@@ -1,115 +1,145 @@
-
-
-.Carrossel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Carrossel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.PaginaHome{
-    min-height: 100%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
+.PaginaHome {
+  min-height: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
 }
 
-.Sobre{
-    position: absolute;
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-    height: 500px;
-    left: 0px;
-    top: 600px;
-    align-items: center;
-    background-color :#c2948a;;
+.Sobre {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  grid-gap: 3%;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  margin-top: 30.5vh;
+  /* align-items: center; */
+  background-color: #c2948a;
+}
+.Sobre img {
+  align-items: center;
+  height: 100%;
+}
+.Fotos {
+  align-items: center;
+}
+.SobreText {
+  margin-top: 8vh;
+  margin-left: 8vh;
+  margin-right: 2vh;
+  font-family: Overlock;
+  font-style: normal;
+  font-size: clamp(0.5em, 0.5em + 1.5vw, 1.5em);
+  line-height: 6.9vh;
 }
 
-.SobreText{
-margin-top: 50px;
-margin-left: 100px;
-margin-right: 100px;
-font-family: Overlock;
-font-style: normal;
-font-size: 1.5em;
-line-height: 45px;
+.Title {
+  justify-content: center;
+  display: flex;
+  width: 66vw;
+  align-items: center;
+  font-family: Overlock SC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(1.5em, 1.5em + 1vw, 2.5em);
+  line-height: 7.6vh;
+  margin: 6vh 0 -9.2vh 0;
+  color: #eef4ed;
+  background: #773344;
+  border-radius: 10px;
 }
 
-.Title{
-justify-content: center;
-display: flex;
-width: 900px;
-align-items: center;
-font-family: Overlock SC;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 50px;
-margin: 40px 0 -60px 0;
-color: #EEF4ED;
-background: #773344;
-border-radius: 10px;
+.TitleBiblioteca {
+  justify-content: center;
+  display: flex;
+  width: 66vw;
+  align-items: center;
+  font-family: Overlock SC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(1.5em, 1.5em + 1vw, 2.5em);
+  line-height: 7.6vh;
+  margin: 3vh 0 0 0;
+  color: #eef4ed;
+  background: #773344;
+  border-radius: 10px;
 }
 
-.TitleBiblioteca{justify-content: center;
-    display: flex;
-    width: 900px;
-    align-items: center;
-    font-family: Overlock SC;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 50px;
-    margin: 20px 0 0 0;
-    color: #EEF4ED;
-    background: #773344;
-    border-radius: 10px;
-    
+.Biblioteca {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  left: 0px;
+  top: 1100px;
 }
 
-.Biblioteca{position: absolute;
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 500px;
-    left: 0px;
-    top: 1100px;
+.Bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 66vw;
+  height: auto;
+  margin: 40px 162px 20px 162px;
+  background: #e5e5e5;
+  border-radius: 20px;
 }
 
-.Bloco{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: 900px;
-    height: 419px;
-    margin: 40px 162px 20px 162px;
-    background: #E5E5E5;
-    border-radius: 20px;
+.imagens {
+  margin: 1.5vh 1.5vw 7.6vh 1vh;
+  height: 30vh;
+  max-width: 100%;
 }
 
-.imagens{
-    margin:10px 20px 50px 20px;
-    width:150px;
-    height: 195px;
-
+.DescriçãoLivro {
+  font-family: Overblock SC;
+  font-size: clamp(0.5em, 0.5em + 1vw, 1em);
+  text-justify: inter-word;
+  margin-bottom: 0;
+  margin-right: 5rem;
+  margin-top: 4.5vh;
 }
 
-.DescriçãoLivro{
-    font-family:Overblock SC;
-    font-size:1.0em;
-    text-justify:inter-word;
-    margin-bottom: 0;
-    margin-right: 5rem;
+.TítuloCategoria {
+  display: flex;
+  font-family: Overlock SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: clamp(1.5em, 1.5em + 1vw, 2em);
+  line-height: 44px;
+  color: #000000;
+  margin-right: 0;
+}
+.Maiscategorias {
+  justify-content: center;
+  display: flex;
+  width: 66vw;
+  align-items: center;
+  font-family: Overlock SC;
+  font-size: clamp(1.5em, 1.5em + 1vw, 2.5em);
+  line-height: 7.6vh;
+  margin: 3vh 0 0 0;
+  color: #eef4ed;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  /* sobreescrevendo estilos do btn primary */
+  background-color: #773344 !important;
+  border-color: transparent !important;
+  outline: transparent !important;
 }
 
-.TítuloCategoria{
-    display:flex;
-    font-family: Overlock SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size:2em;
-    line-height: 44px;
-    color: #000000;
-    margin-right: 0;
+@media (max-width: 768px) {
+  .SobreText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+  }
 }
