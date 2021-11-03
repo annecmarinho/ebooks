@@ -8,6 +8,25 @@ import Livro from "./Livro";
 import Perfil from "./Perfil";
 import Menu from "./Menu";
 import Footer from "./Footer";
+import { isAuthenticated } from "./services/auth";
+
+
+const PrivateRoute = ({ component: Component, ...rest}) =>(
+    <Route
+    {...rest}
+    render={(props)=>
+        isAuthenticated() ? (
+            <Component {...props} />
+
+        ) : (
+            <Redirect
+               to={{ pathname:"/login", state:{ from: props.location } }}
+            />
+        )
+    }
+   /> 
+);
+
 
 function Routes() {
     return (
@@ -27,7 +46,7 @@ function UserMenu() {
                     <Route path="/login" component={Login} />
                     <Route path="/biblioteca" component={Biblioteca} />
                     <Route path="/livro" component={Livro} />
-                    <Route path="/perfil" component={Perfil} />
+                    <PrivateRoute path="/perfil" component={Perfil} />
                     <Route path="/cadastro" component={Cadastro} />
                     <Route component={() => <Redirect to="/home" />} />
                 </Switch>
