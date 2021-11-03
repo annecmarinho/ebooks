@@ -64,8 +64,7 @@ function Login() {
             Login
           </Button>
 
-          <Button variant="link" style={{ color: "#773344", fontFamily: "Overlock SC", lineHeight: "10px" }}>Esqueceu a senha?</Button>
-          <Button variant="link" style={{ color: "#773344", fontFamily: "Overlock SC" }}>Não possui cadastro? Cadastre-se!</Button>
+        
 
 
 
