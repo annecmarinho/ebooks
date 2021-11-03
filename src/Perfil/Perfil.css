@@ -1,7 +1,8 @@
 .baseperfil {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   width: 100%;
+  flex-direction: column;
 }
 .fundo {
   max-width: 80%;
@@ -52,10 +53,8 @@
   height: auto;
 }
 .parteebook {
-  position: absolute;
   width: 100%;
   height: auto;
-  top: 115vh;
   background: #c2948a;
   border-radius: 1%;
   margin: auto;
@@ -164,7 +163,7 @@
 }
 @media (max-width: 450px) {
   .parteebook {
-    top: 170vh;
+    top: 167vh;
   }
   .ebookssalvos {
     display: grid;
@@ -203,3 +202,13 @@
     -webkit-box-orient: vertical;
   }
 }
+@media (min-width: 1440px) {
+  .parteebook {
+    top: 65%;
+  }
+}
+/* @media (max-width: 400px) {
+  .parteebook {
+    top: 130vh;
+  }
+} */

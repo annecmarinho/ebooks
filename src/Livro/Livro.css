@@ -1,6 +1,5 @@
-
 .base {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,57 +7,62 @@
 }
 
 .center {
-  display:flex;
+  display: flex;
   align-items: center;
   flex-direction: row;
   background-color: #c4c4c4;
   width: 100%;
-  height: 588px;
-  margin-top: 70vh;
+  height: 90vh;
+  margin: 30px 0;
+  /* margin-top: 10vh; */
 }
-.capa {
- max-width: 346px;
- margin-left: 10px;
+.capax {
+  max-width: 25.4vw;
+  margin-left: 3vw;
+}
+.capax img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+img {
+  max-width: 100%;
 }
 
-.texto_livro{
-  display:flex;
+.texto_livro {
+  display: flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
-  margin: 30px 30px 30px 70px;
-
+  left: 10vw;
 }
 .titulo_livro {
-  
   text-align: center;
   color: #773344;
-  width: 500px;
-  font-size: 1.5em;
+  width: 36.6vw;
+  font-size: clamp(1em, 1em + 1vw, 1.8em);
 }
 
 .descricao_livro {
-  width: 700px;
+  width: 52vw;
 }
-.descricao_livro h1{
-  font-size: 1.2em;
+.descricao_livro h1 {
+  font-size: clamp(0.5em, 1em + 1vw, 1.2em);
 }
-
 
 .center_comment {
-  display:flex;
+  display: flex;
   flex-direction: column;
   background-color: #c2948a;
   width: 100%;
-
 }
 .titulo_comment {
   width: 80%;
   margin: 1.5em 1.5em 1.5em 1.5em;
 }
 .titulo_comment h1 {
-  font-size: 1.5em;
+  font-size: clamp(1em, 1em + 1vw, 1.5em);
 }
-
 
 hr {
   height: 1px;
@@ -67,7 +71,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
 
 .btn {
   background-color: #773344;
@@ -80,4 +83,22 @@ hr {
 }
 .btn:hover {
   background-color: #773344;
+}
+
+@media (max-width: 815px) {
+  .texto_livro {
+    position: relative;
+    margin: 0.5vw;
+  }
+  .capax img {
+    position: relative;
+    top: 1%;
+  }
+  .descricao_livro h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+  }
 }

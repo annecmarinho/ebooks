@@ -24,12 +24,12 @@ function Home() {
           <h3 className="Title">Livros mais populares</h3>
 
 
-          <Carousel fade style={{ height: "300px", top: "100px", backgroundColor: "#C4C4C4", borderRadius: "19px", width: "900px" }} >
+          <Carousel fade style={{ height: "45.66vh", top: "15.22vh", backgroundColor: "#C4C4C4", borderRadius: "19px", width: "66vw" }} >
 
             <Carousel.Item style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
 
               <img
-                style={{ margin: "16px 30px 16px 100px", width: "150px" }}
+                style={{ margin: "4.5vh 4.5vh 2.5vh 7.32vw", width: "11vw" }}
                 className="d-flex"
                 src="/images/Sapiens 1.png"
                 alt="First slide"
@@ -45,7 +45,7 @@ function Home() {
 
             <Carousel.Item style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
               <img
-                style={{ margin: "16px 30px 16px 100px", width: "150px" }}
+                style={{ margin: "4.5vh 4.5vh 2.5vh 7.32vw", width: "11vw" }}
                 className="d-flex"
                 src="/images/capa-o milagre da manhã.jpg"
                 alt="Second slide"
@@ -59,7 +59,7 @@ function Home() {
 
             <Carousel.Item style={{ display: "flex", flexDirection: "row", alignItems: "center" }} >
               <img
-                style={{ margin: "16px 30px 16px 100px", width: "150px" }}
+                style={{ margin: "4.5vh 4.5vh 2.5vh 7.32vw", width: "11vw" }}
                 className="d-flex"
                 src="/images/capa- a culpa é das estrelas.jpg"
                 alt="Third slide"
@@ -75,8 +75,13 @@ function Home() {
         </div>
 
         <div className="Sobre" >
+<<<<<<< HEAD
           <img style={{ width: "1500px", height: "500px" }} src="/images/Frame 2.png" />
           <p>A plataforma Planet Books tem como objetivo te ajudar a manter o hábito da leitura, disponibilizando uma biblioteca diversificada. Ao acessar os livros, o usuário pode salvar aqueles que mais gostou e acessá-los depois na sua página de perfil.É importante que vocês se mantenham sempre atualizados às novidades para não perderem nenhum livro novo. Estamos animados para ler com você, agora nos vemos em outros planetas e realidades, boa viagem!
+=======
+          <img style={{ maxwidth: "100%" }} src="/images/Frame 2.png" />
+          <p className="SobreText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+>>>>>>> master
           </p>
         </div>
 
@@ -97,8 +102,8 @@ function Home() {
                 fontFamily: "Overlock SC",
                 fontStyle: "normal",
                 fontWeight: "normal",
-                fontSize: "30px",
-                lineHeight: "44px",
+                fontSize: "clamp(1.5em, 1.5em + 1vw, 2em)",
+                lineHeight: "6.7vh",
                 color: "#000000"
               }}
               onClick={() => { handleClick("/biblioteca") }} >Ver mais...</Button>
@@ -119,8 +124,8 @@ function Home() {
                 fontFamily: "Overlock SC",
                 fontStyle: "normal",
                 fontWeight: "normal",
-                fontSize: "30px",
-                lineHeight: "44px",
+                fontSize: "clamp(1.5em, 1.5em + 1vw, 2em)",
+                lineHeight: "6.7vh",
                 color: "#000000"
               }}
               onClick={() => { handleClick("/biblioteca") }}>Ver mais...</Button>
@@ -132,8 +137,9 @@ function Home() {
 
             <div className="Fotos">
               <img src="/images/Cortiço 1.png" className="imagens" />
-              <img src="/images/Dom casmurro 1.png" className="imagens" />
+
               <img src="/images/quartodedespejo.jpg" className="imagens" />
+              <img src="/images/Dom casmurro 1.png" className="imagens" />
             </div>
 
             <Button variant="link"
@@ -141,8 +147,8 @@ function Home() {
                 fontFamily: "Overlock SC",
                 fontStyle: "normal",
                 fontWeight: "normal",
-                fontSize: "30px",
-                lineHeight: "44px",
+                fontSize: "clamp(1.5em, 1.5em + 1vw, 2em)",
+                lineHeight: "6.7vh",
                 color: "#000000"
               }}
               onClick={() => { handleClick("/biblioteca") }}>Ver mais...</Button>
@@ -163,27 +169,15 @@ function Home() {
                 fontFamily: "Overlock SC",
                 fontStyle: "normal",
                 fontWeight: "normal",
-                fontSize: "30px",
-                lineHeight: "44px",
+                fontSize: "clamp(1.5em, 1.5em + 1vw, 2em)",
+                lineHeight: "6.7vh",
                 color: "#000000"
               }}
               onClick={() => { handleClick("/biblioteca") }}>Ver mais...</Button>
 
           </div>
 
-          <Button style={{
-            justifyContent: "center",
-            display: "flex",
-            width: "900px",
-            alignItems: "center",
-            fontFamily: "Overlock SC",
-            fontSize: "30px",
-            lineHeight: "50px",
-            margin: "20px 0 0 0",
-            color: "#EEF4ED",
-            backgroundColor: "#773344",
-            borderRadius: "10px"
-          }}
+          <Button className="Maiscategorias"
             onClick={() => { handleClick("/biblioteca") }}>Ver todas as categorias...</Button>
 
         </div>

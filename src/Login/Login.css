@@ -1,40 +1,70 @@
-.container{
-display: flex;
-flex-direction:column;
-width:  600px;
-height: 436px;
-border-radius: 20px;
-background-color: #c4c4c4;
-align-items:center;
-justify-content:center;
-    
+.containerx {
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 60vh;
+  min-height: 65%;
+  border-radius: 5%;
+  background-color: #c4c4c4;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto; */
 }
 
-.container h1{
+.containerx h1 {
+  color: #773344;
+  font-size: 200%;
+  font-weight: 1000;
+  font-family: "overlock SC";
+  top: 15px;
+  margin-top: 15px;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BotaoLogin:hover {
+  filter: brightness(70%);
+}
+
+@media (max-width: 600px) {
+  .containerx {
+    width: 75%;
+    height: auto;
+  }
+}
+@media (max-width: 220px) {
+  .containerx {
+    width: 75%;
+    border-radius: 2%;
+    height: auto;
+  }
+  .containerx h1 {
+    font-size: 1.5em;
+  }
+  .desk {
+    font-size: small;
+  }
+}
+@media (min-width: 2000px) {
+  .containerx {
+    width: 300%;
+    border-radius: 5%;
+  }
+  .containerx h1 {
     color: #773344;
-    font-size: 200%;
+    font-size: 400%;
     font-weight: 1000;
-    font-family: 'overlock SC';
+    font-family: "overlock SC";
     top: 15px;
     margin-top: 15px;
+  }
 }
-
-.page{
-    height: 100%;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-
-}
-
-.BotaoLogin:hover{
-    filter:brightness(70%);
-}
-
-
-
-
-
-
-
- 

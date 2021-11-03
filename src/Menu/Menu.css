@@ -1,33 +1,41 @@
-.list{
-width: 200px;
-background-color:#c2948A ;
-height: 100%;
-    }
-
-.conjunto{
-    display:flex;
-    align-items: center;
-    
-}
-.Logo{
-font-family: Salsa;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 44px;
-display:flex;
-align-items: center;
-color: #FFFFFF;
-margin-bottom: 0;
-}
-.Saturno{
-    width: 129px;
-    height: 80px;
+.list {
+  width: 200px;
+  background-color: #c2948a;
+  height: 100%;
 }
 
-.buttons{
-    display:flex;
-    align-items: center;
-    margin-left: auto;
+.conjunto {
+  display: flex;
+  align-items: center;
+}
+.Logo {
+  font-family: Salsa;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.Saturno {
+  width: 129px;
+  height: 80px;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+@media (max-width: 665px) {
+  .Logo {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .buttons {
+    margin-right: 15%;
+  }
+}
