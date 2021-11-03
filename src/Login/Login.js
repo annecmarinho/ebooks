@@ -1,8 +1,37 @@
-import React from "react";
-import { Form, Button } from "react-bootstrap"
-import "./Login.css"
+
+import {React, useState} from "react";
+import { Form, Button } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
+import api from"../services/api";
+import {login} from "../services/auth";
+import "./Login.css";
 
 function Login() {
+
+  const [email,setEmail] = useState();
+  const [password,setPassword] = useState();
+  const history = useHistory();
+
+  async function handleLogin(e){
+    e.preventDefault();
+    try{
+      console.log(email,password);
+      const response = await api.post('/login',{email,password});
+      alert ("Bem vindo", response.data.user.name );
+      login(response.data.acessToken)
+      history.push("/home");
+      
+    }catch(error){
+      if(error.response.status === 403){
+        alert ("Credenciais Invalidas!");
+      }else{
+        alert(error.response.data.notification);
+      }
+      console.warn(error);
+      
+    }
+ 
+  }
   return (
     <div className="page">
       <Form style={{ width: "600px" }}>
@@ -10,11 +39,11 @@ function Login() {
           <h1>Login</h1>
 
           <Form.Group className="mb-3" controlId="formBasicEmail" style={{ width: "85%", marginTop: "30px" }}>
-            <Form.Control type="email" placeholder="E-mail" />
+            <Form.Control type="email" placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicSenha" style={{ width: "85%", }}>
-            <Form.Control type="password" placeholder="Senha" />
+            <Form.Control type="password" placeholder="Senha" onChange={e => setPassword(e.target.value)} />
           </Form.Group>
 
           <Button
@@ -33,12 +62,12 @@ function Login() {
               fontSize: "clamp(1em, 1em + 1vw, 1.5em)",
               justifyContent: "center"
             }}
+            onClick={handleLogin}
           >
             Login
           </Button>
 
-          <Button className="desk" variant="link" style={{ color: "#773344", fontFamily: "Overlock SC", lineHeight: "3.5vh", fontSize: "clamp(0.5em, 0.5em + 0.8vw, 2em)" }}>Esqueceu a senha?</Button>
-          <Button variant="link" style={{ color: "#773344", fontFamily: "Overlock SC", fontSize: "clamp(0.5em, 0.5em + 0.8vw, 2em)" }}>Não possui cadastro? Cadastre-se!</Button>
+
 
 
 

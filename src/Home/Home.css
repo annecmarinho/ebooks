@@ -22,6 +22,7 @@
   /* align-items: center; */
   background-color: #c2948a;
 }
+
 .Sobre img {
   align-items: center;
   height: 100%;
@@ -29,7 +30,7 @@
 .Fotos {
   align-items: center;
 }
-.SobreText {
+.Sobre p {
   margin-top: 8vh;
   margin-left: 8vh;
   margin-right: 2vh;
@@ -37,6 +38,7 @@
   font-style: normal;
   font-size: clamp(0.5em, 0.5em + 1.5vw, 1.5em);
   line-height: 6.9vh;
+
 }
 
 .Title {
