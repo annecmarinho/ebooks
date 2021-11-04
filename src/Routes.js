@@ -8,6 +8,7 @@ import Livro from "./Livro";
 import Perfil from "./Perfil";
 import Menu from "./Menu";
 import Footer from "./Footer";
+import AlterarPerfil from "./AlterarPerfil";
 import { isAuthenticated } from "./services/auth";
 
 
@@ -47,6 +48,7 @@ function UserMenu() {
                     <Route path="/biblioteca" component={Biblioteca} />
                     <Route path="/livro" component={Livro} />
                     <PrivateRoute path="/perfil" component={Perfil} />
+                    <Route path="/teste" compoent={Biblioteca}/>
                     <Route path="/cadastro" component={Cadastro} />
                     <Route component={() => <Redirect to="/home" />} />
                 </Switch>
