@@ -17,6 +17,10 @@ function Selecionados ({ selecionados }) {
       setShowWarning(selecionados.length >= 1);
   }, [selecionados]);
 
+  useEffect(() => {
+    console.log(filtros);
+  }, [filtros])
+  
   return (
     <div>
       {filtros !== "" && (

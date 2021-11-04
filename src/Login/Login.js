@@ -18,7 +18,7 @@ function Login() {
       console.log(email,password);
       const response = await api.post('/login',{email,password});
       alert ("Bem vindo", response.data.user.name );
-      login(response.data.acessToken)
+      login(response.data.accessToken, response.data.user.user_id);
       history.push("/home");
       
     }catch(error){

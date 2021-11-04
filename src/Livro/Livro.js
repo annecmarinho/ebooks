@@ -5,19 +5,18 @@ import { IconContext } from 'react-icons/lib'
 import Descricao_livro from "../Descricao_livro";
 import Comentario from "../Comentarios";
 import api from "../services/api";
+import { userId } from "../services/auth";
 
 
 
 function Livro(props) {
     console.log(props);
     const [book, setBook] = useState([]);
-    const [bookUser, setBookUser] = useState([]);
     const { id } = props.match.params;
 
     async function createBookUser() {
         try {
-            const response = await api.post("/bookUser");
-            setBookUser([...response.data]);
+            const response = await api.post("/bookUser",{book_id:id, user_id:userId});
         } catch (error) {
             alert("Algo deu errado");
         }

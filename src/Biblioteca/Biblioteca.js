@@ -7,13 +7,18 @@ import api from "../services/api";
 
 function Biblioteca() {
   const [filtros, setFiltros] = useState([]);
+  const [filtro, setFiltro] = useState("");
   const [books, setBooks] = useState([]);
   const history = useHistory();
+  const [filteredBooks, setFilteredBooks] = useState([]);
 
   async function getBooks() {
     try {
       const response = await api.get("/books");
       setBooks([...response.data]);
+      if(filtros.length > 0){
+        setBooks([...response.data].filter(book => book.categoria === filtros[0]));
+      }
     } catch (error) {
       alert("Algo deu errado");
     }
@@ -21,11 +26,17 @@ function Biblioteca() {
 
   useEffect(() => {
     getBooks();
-  }, [])
+  }, [filtros])
 
-  useEffect(() => {
 
-  }, [])
+  // useEffect(() => {
+  //   if(filtros[0] !== ""){
+  //     setFilteredBooks(books.filter(book => book.categoria === filtros[0]));
+  //   }
+  //   else {
+  //     getBooks();
+  //   }
+  // }, [filtros])
 
   function handlebook(id) {
     history.push(`/livro/${id}`);
@@ -144,12 +155,12 @@ function Biblioteca() {
     else {
       const value = e.target.value
 
-      const newFiltros = [...filtros];
-      const index = filtros.indexOf(value);
+      // const newFiltros = [...filtros];
+      // const index = filtros.indexOf(value);
 
-      if (index === -1) newFiltros.push(value);
-      else newFiltros.splice(index, 1);
-      setFiltros(newFiltros);
+      // if (index === -1) newFiltros.push(value);
+      // else newFiltros.splice(index, 1);
+      setFiltros([value]);
     }
 
   }
@@ -189,12 +200,10 @@ function Biblioteca() {
 
 
       <div className="Livros">
-        {
-          books &&
-          books.filter(books => books.categoria == "Sociopolítica").map((book) => {
+        {books.map((book) => {
             return (
               <button className="Botoes" onClick={()=> handlebook(book.book_id)}>
-                <img src={`/images/${book.título}.png`} alt="capa" className="capa"></img>
+                <img src={`/images/${book.título}.png` || `/images/${book.título}.jpg` } alt="capa" className="capa"></img>
                 <h1>{book.título}</h1>
                 <h1>{book.autor}</h1>
               </button>
