@@ -48,7 +48,7 @@
 }
 .circle {
   border-radius: 50%;
-  max-width: 100%;
+  max-width: 50%;
   display: block;
   height: auto;
 }
@@ -156,7 +156,7 @@
     -webkit-box-orient: vertical;
   }
   .circle {
-    max-width: 85%;
+    max-width: 60%;
     display: block;
     height: auto;
   }

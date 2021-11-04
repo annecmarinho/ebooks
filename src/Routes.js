@@ -47,6 +47,7 @@ function UserMenu() {
                     <Route path="/login" component={Login} />
                     <Route path="/biblioteca" component={Biblioteca} />
                     <PrivateRoute path="/perfil" component={Perfil} />
+                    <Route path="/alterarperfil" component={AlterarPerfil}/>
                     <Route path="/livro/:id" component={Livro} />
                     <Route path="/cadastro" component={Cadastro} />
                     <Route component={() => <Redirect to="/home" />} />

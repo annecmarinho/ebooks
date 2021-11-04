@@ -50,7 +50,7 @@ function Perfil() {
         </div>
         <div className="meuperfil">
           <h1> Meu Perfil</h1>
-          <img className="circle" src="/images/Anne.jpg" alt="queen"></img>
+          <img className="circle" src="/images/Beth.jpg" alt="queen"></img>
         </div>
         <div className="detalhes">
           <h2> Detalhes </h2>
@@ -77,7 +77,7 @@ function Perfil() {
           {bookuser.map((livro) => {
             return (
               <button className="fundo">
-                <img src="/images/" alt="dispo" className="image" ></img>
+                <img src= {`/images/${livro.título}.png`} alt="dispo" className="image" ></img>
                 <h1>{livro.título}</h1>
               </button>
             );
