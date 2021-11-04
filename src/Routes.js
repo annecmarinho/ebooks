@@ -8,6 +8,7 @@ import Livro from "./Livro";
 import Perfil from "./Perfil";
 import Menu from "./Menu";
 import Footer from "./Footer";
+import AlterarPerfil from "./AlterarPerfil";
 import { isAuthenticated } from "./services/auth";
 
 

@@ -17,11 +17,13 @@ function Login() {
     try{
       console.log(email,password);
       const response = await api.post('/login',{email,password});
-      alert ("Bem vindo", response.data.user.name );
-      login(response.data.acessToken)
-      history.push("/home");
+      console.log(response.data.user)
+      alert ("Bem vindo", response.data.user.name);
+      login(response.data.accessToken,response.data.user.user_id);
+      window.location.href="/home";
       
     }catch(error){
+      console.log(error);
       if(error.response.status === 403){
         alert ("Credenciais Invalidas!");
       }else{

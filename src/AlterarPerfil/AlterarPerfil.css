@@ -1,0 +1,93 @@
+.Conteiner {
+    display: flex;
+    flex-direction: column;
+    max-width: 43%;
+    flex-grow: 1;
+    background: #c4c4c4;
+    border-radius: 5%;
+    height: auto;
+  }
+  
+  .Base {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .Dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .Dados input {
+    width: 33vw;
+  }
+  
+  .Titulo {
+    color: #773344;
+    font-size: clamp(0.5em, 2em + 1vw, 2.5em);
+    font-weight: 1000;
+    font-family: "overlock SC";
+    margin-top: 15px;
+  }
+  
+  .inputs input {
+    margin-top: 15px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0 24px;
+  }
+  
+  .Endereco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .Endereco input {
+    width: 15.7vw;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  .Cidade {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  
+  .Cidade input {
+    width: 15.7vw;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  
+  .Botao {
+    background-color: #773344;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 33vw;
+    transition: filter 0.2s;
+    margin-bottom: 15px;
+    border: 1px solid #333333;
+    height: auto;
+    font-size: clamp(0.5em, 1em + 1vw, 1em);
+  }
+  
+  .Botao:hover {
+    filter: brightness(70%);
+  }
+  

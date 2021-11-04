@@ -212,3 +212,20 @@
     top: 130vh;
   }
 } */
+
+.Botões{
+  flex-direction: column;
+  grid-column: 2;
+
+}
+.Botao {
+  background-color: #773344;
+  color: #ffffff;
+  border-radius: 4px;
+  width: 20vw;
+  transition: filter 0.2s;
+  margin-bottom: 15px;
+  border: 1px solid #333333;
+  height: auto;
+  font-size: clamp(0.5em, 1em + 1vw, 1em);
+}

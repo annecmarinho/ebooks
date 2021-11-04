@@ -10,5 +10,7 @@ export const login = (token, user) => {
 export const logout = () =>{ 
     sessionStorage.removeItem(TOKEN_KEY); 
     sessionStorage.removeItem(USER_KEY); 
+    window.location.href = "/login";
+
 };
 export const userId = sessionStorage.getItem(USER_KEY);
