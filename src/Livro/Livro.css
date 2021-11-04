@@ -81,8 +81,9 @@ hr {
   font-size: 16px;
   cursor: pointer;
 }
-.btn:hover {
-  background-color: #773344;
+.btn:hover, 
+.unlike {
+  background-color: #773344 !important;
 }
 
 @media (max-width: 815px) {

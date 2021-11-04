@@ -59,11 +59,6 @@ function Biblioteca() {
       autor: "Carlos Drummond de Andrade"
     },
     {
-      capa: "/images/Ritalee (1) 1 (1).png",
-      titulo: "Rita lee: uma autobiografia",
-      autor: "Rita lee"
-    },
-    {
       capa: "/images/capa-diana 1 (1).png",
       titulo: "Diana: Sua verdadeira historia",
       autor: "Andrew Morton"
@@ -181,8 +176,8 @@ function Biblioteca() {
               <em>None</em>
             </MenuItem>
             <MenuItem value="Biografia">Biografia</MenuItem>
-            <MenuItem value="Classicos brasileiros">Classicos brasileiros</MenuItem>
-            <MenuItem value="Classicos estrangeiros">Classicos estrangeiros</MenuItem>
+            <MenuItem value="Clássicos brasileiros">Clássicos brasileiros</MenuItem>
+            <MenuItem value="Clássicos estrangeiros">Clássicos estrangeiros</MenuItem>
             <MenuItem value="Educação">Educação</MenuItem>
             <MenuItem value="Fantasia">Fantasia</MenuItem>
             <MenuItem value="Ficção científica">Ficção científica</MenuItem>
