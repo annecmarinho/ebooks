@@ -43,11 +43,7 @@ function Biblioteca() {
   }
 
   const livros = [
-    {
-      capa: "/images/Sapiens 1.png",
-      titulo: "Sapiens",
-      autor: "Yuval Noah Harari "
-    },
+
     {
       capa: "/images/AdmirávelMundoNovo.jpg",
       titulo: "Admirável Mundo Novo",
@@ -58,30 +54,11 @@ function Biblioteca() {
       titulo: "Claro Enigma",
       autor: "Carlos Drummond de Andrade"
     },
-    {
-      capa: "/images/capa-diana 1 (1).png",
-      titulo: "Diana: Sua verdadeira historia",
-      autor: "Andrew Morton"
-    },
-    {
-      capa: "/images/capa-nelson mandela.jpg",
-      titulo: "A cor da liberdade: Os anos de presidencia",
-      autor: "Mandla Langa e Nelson Mandela"
-    },
+   
     {
       capa: "/images/capa-o milagre da manhã.jpg",
       titulo: "O milagre da manhã",
       autor: "Hall Elrod"
-    },
-    {
-      capa: "/images/Cortiço 1.png",
-      titulo: "O cortiço",
-      autor: "Aluísio Azevedo"
-    },
-    {
-      capa: "/images/Dom Casmurro 1.png",
-      titulo: "Dom Casmurro",
-      autor: "Machado de Assis"
     },
     {
       capa: "/images/quartodedespejo.jpg",
@@ -104,34 +81,14 @@ function Biblioteca() {
       autor: "Paulo Freire"
     },
     {
-      capa: "/images/Metamorfose 1.png",
-      titulo: "A metamorfose",
-      autor: "Franz Kafka"
-    },
-    {
       capa: "/images/OsMiseráveis.jpg",
       titulo: "Os miseráveis",
       autor: "Victor Hugo"
     },
     {
-      capa: "/images/crimeecastigo.jpg",
-      titulo: "Crime e castigo",
-      autor: "Fiodor Dostoievski"
-    },
-    {
       capa: "/images/OsHomensQueNao.jpg",
       titulo: "Os homens que não amavam as mulheres",
       autor: "Stieg Larsson"
-    },
-    {
-      capa: "/images/capa-a seleção 1.png",
-      titulo: "A seleção",
-      autor: "Kierra Cass"
-    },
-    {
-      capa: "/images/Morrodosventosuivantes 1.png",
-      titulo: "O morro dos ventos uivantes",
-      autor: "Emily Brontë"
     },
     {
       capa: "/images/capa- a culpa é das estrelas.jpg",
@@ -176,7 +133,7 @@ function Biblioteca() {
               <em>None</em>
             </MenuItem>
             <MenuItem value="Biografia">Biografia</MenuItem>
-            <MenuItem value="Clássicos brasileiros">Clássicos brasileiros</MenuItem>
+            <MenuItem value="Clássicos nacionais">Clássicos nacionais</MenuItem>
             <MenuItem value="Clássicos estrangeiros">Clássicos estrangeiros</MenuItem>
             <MenuItem value="Educação">Educação</MenuItem>
             <MenuItem value="Fantasia">Fantasia</MenuItem>

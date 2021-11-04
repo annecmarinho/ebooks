@@ -31,7 +31,7 @@ function Home() {
               <img
                 style={{ margin: "4.5vh 4.5vh 2.5vh 7.32vw", width: "11vw" }}
                 className="d-flex"
-                src="/images/Sapiens 1.png"
+                src="/images/Sapiens.png"
                 alt="First slide"
               />
 
@@ -88,8 +88,8 @@ function Home() {
             <p className="TítuloCategoria">Clássicos Estrangeiros</p>
 
             <div className="Fotos">
-              <img src="/images/Metamorfose 1.png" className="imagens" />
-              <img src="/images/crimeecastigo.jpg" className="imagens" />
+              <img src="/images/A Metamorfose.png" className="imagens" />
+              <img src="/images/Crime e castigo.png" className="imagens" />
               <img src="/images/2.png" className="imagens" />
             </div>
 
@@ -111,8 +111,8 @@ function Home() {
 
             <div className="Fotos">
               <img src="/images/1.png" className="imagens" />
-              <img src="/images/Morrodosventosuivantes 1.png" className="imagens" />
-              <img src="/images/capa-a seleção 1.png" className="imagens" />
+              <img src="/images/O morro dos ventos uivantes.png" className="imagens" />
+              <img src="A seleção.png" className="imagens" />
             </div>
 
             <Button variant="link"
@@ -132,10 +132,10 @@ function Home() {
             <p className="TítuloCategoria">Clássicos Nacionais</p>
 
             <div className="Fotos">
-              <img src="/images/Cortiço 1.png" className="imagens" />
+              <img src="/images/O cortiço.png" className="imagens" />
 
               <img src="/images/quartodedespejo.jpg" className="imagens" />
-              <img src="/images/Dom casmurro 1.png" className="imagens" />
+              <img src="/images/Dom casmurro.png" className="imagens" />
             </div>
 
             <Button variant="link"
@@ -155,9 +155,9 @@ function Home() {
             <p className="TítuloCategoria">Bibliografias</p>
 
             <div className="Fotos">
-              <img src="/images/Ritalee (1) 1 (1).png" className="imagens" />
-              <img src="/images/capa-diana 1 (1).png" className="imagens" />
-              <img src="/images/capa-nelson mandela 1.png" className="imagens" />
+              <img src="/images/Rita Lee Uma autobiografia.png" className="imagens" />
+              <img src="/images/Diana Sua verdadeira historiapng" className="imagens" />
+              <img src="/images/A cor da liberdade Os anos de presidencia.png" className="imagens" />
             </div>
 
             <Button variant="link"
