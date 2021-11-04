@@ -1,10 +1,35 @@
-import React, { useState } from "react";
-import Selecionados from "./Components/Selecionados"
+import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
+import Selecionados from "./Components/Selecionados";
 import { FormControl, Select, MenuItem, InputLabel } from '@material-ui/core';
-import "./Biblioteca.css"
+import "./Biblioteca.css";
+import api from "../services/api";
 
 function Biblioteca() {
   const [filtros, setFiltros] = useState([]);
+  const [books, setBooks] = useState([]);
+  const history = useHistory();
+
+  async function getBooks() {
+    try {
+      const response = await api.get("/books");
+      setBooks([...response.data]);
+    } catch (error) {
+      alert("Algo deu errado");
+    }
+  }
+
+  useEffect(() => {
+    getBooks();
+  }, [])
+
+  useEffect(() => {
+
+  }, [])
+
+  function handlebook(id) {
+    history.push(`/livro/${id}`);
+  }
 
   const livros = [
     {
@@ -164,15 +189,17 @@ function Biblioteca() {
 
 
       <div className="Livros">
-        {livros.map((livro) => {
-          return (
-            <button className="Botoes">
-              <img src={livro.capa} alt="capa" className="capa"></img>
-              <h1>{livro.titulo}</h1>
-              <h1>{livro.autor}</h1>
-            </button>
-          );
-        })}
+        {
+          books &&
+          books.filter(books => books.categoria == "Sociopolítica").map((book) => {
+            return (
+              <button className="Botoes" onClick={()=> handlebook(book.book_id)}>
+                <img src={`/images/${book.título}.png`} alt="capa" className="capa"></img>
+                <h1>{book.título}</h1>
+                <h1>{book.autor}</h1>
+              </button>
+            );
+          })}
       </div>
     </div>
   );

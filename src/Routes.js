@@ -46,9 +46,8 @@ function UserMenu() {
                     <Route path="/Home" component={Home} />
                     <Route path="/login" component={Login} />
                     <Route path="/biblioteca" component={Biblioteca} />
-                    <Route path="/livro" component={Livro} />
                     <PrivateRoute path="/perfil" component={Perfil} />
-                    <Route path="/teste" compoent={Biblioteca}/>
+                    <Route path="/livro/:id" component={Livro} />
                     <Route path="/cadastro" component={Cadastro} />
                     <Route component={() => <Redirect to="/home" />} />
                 </Switch>

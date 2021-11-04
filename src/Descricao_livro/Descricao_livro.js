@@ -1,8 +1,10 @@
 import React from "react";
 
 function Descricao_livro(props){
+
+
   return(
-    <div>
+  <div>
   <h1> Autor: {props.autor}</h1>
   <h1> Categoria: {props.categoria}</h1>
   <h1> Descrição do livro:</h1>
