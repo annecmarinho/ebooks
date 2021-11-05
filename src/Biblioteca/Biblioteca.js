@@ -42,61 +42,7 @@ function Biblioteca() {
     history.push(`/livro/${id}`);
   }
 
-  const livros = [
-
-    {
-      capa: "/images/AdmirávelMundoNovo.jpg",
-      titulo: "Admirável Mundo Novo",
-      autor: "Aldoux Huxley"
-    },
-    {
-      capa: "/images/ClaroEnigma.jpg",
-      titulo: "Claro Enigma",
-      autor: "Carlos Drummond de Andrade"
-    },
-   
-    {
-      capa: "/images/capa-o milagre da manhã.jpg",
-      titulo: "O milagre da manhã",
-      autor: "Hall Elrod"
-    },
-    {
-      capa: "/images/quartodedespejo.jpg",
-      titulo: "Quarto de despejo",
-      autor: "Carolina Maria de Jesus"
-    },
-    {
-      capa: "/images/PippiMeialonga.jpg",
-      titulo: "Pippi Meialonga",
-      autor: "Astrid Lindgren"
-    },
-    {
-      capa: "/images/Scrum.jpg",
-      titulo: "Scrum: a arte de fazer o dobro do trabalho na metade do tempo",
-      autor: "Jeff Sutherland"
-    },
-    {
-      capa: "/images/PedagogiaDaAutonomia.jpg",
-      titulo: "Pedagogia da Autonomia",
-      autor: "Paulo Freire"
-    },
-    {
-      capa: "/images/OsMiseráveis.jpg",
-      titulo: "Os miseráveis",
-      autor: "Victor Hugo"
-    },
-    {
-      capa: "/images/OsHomensQueNao.jpg",
-      titulo: "Os homens que não amavam as mulheres",
-      autor: "Stieg Larsson"
-    },
-    {
-      capa: "/images/capa- a culpa é das estrelas.jpg",
-      titulo: "A culpa é das estrelas ",
-      autor: "John Green"
-    }
-
-  ];
+ 
 
 
   function handleInputChange(e) {

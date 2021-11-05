@@ -47,7 +47,7 @@ function Home() {
               <img
                 style={{ margin: "4.5vh 4.5vh 2.5vh 7.32vw", width: "11vw" }}
                 className="d-flex"
-                src="/images/capa-o milagre da manhã.jpg"
+                src="/images/O milagre da manhã.png"
                 alt="Second slide"
               />
 
@@ -61,7 +61,7 @@ function Home() {
               <img
                 style={{ margin: "4.5vh 4.5vh 2.5vh 7.32vw", width: "11vw" }}
                 className="d-flex"
-                src="/images/capa- a culpa é das estrelas.jpg"
+                src="/images/A culpa é das estrelas.png"
                 alt="Third slide"
               />
               <p className="DescriçãoLivro">"A culpa é das estrelas" narra o romance de dois adolescentes que se conhecem (e se apaixonam) em um Grupo de Apoio para Crianças com Câncer: Hazel, uma jovem de dezesseis anos que sobrevive graças a uma droga revolucionária que detém a metástase em seus pulmões, e Augustus Waters, de dezessete, ex-jogador de basquete que perdeu a perna para o osteosarcoma.
@@ -112,7 +112,7 @@ function Home() {
             <div className="Fotos">
               <img src="/images/1.png" className="imagens" />
               <img src="/images/O morro dos ventos uivantes.png" className="imagens" />
-              <img src="A seleção.png" className="imagens" />
+              <img src="/images/A seleção.png" className="imagens" />
             </div>
 
             <Button variant="link"
@@ -134,7 +134,7 @@ function Home() {
             <div className="Fotos">
               <img src="/images/O cortiço.png" className="imagens" />
 
-              <img src="/images/quartodedespejo.jpg" className="imagens" />
+              <img src="/images/Quarto de despejo.png" className="imagens" />
               <img src="/images/Dom casmurro.png" className="imagens" />
             </div>
 
@@ -156,7 +156,7 @@ function Home() {
 
             <div className="Fotos">
               <img src="/images/Rita Lee Uma autobiografia.png" className="imagens" />
-              <img src="/images/Diana Sua verdadeira historiapng" className="imagens" />
+              <img src="/images/Diana Sua verdadeira historia.png" className="imagens" />
               <img src="/images/A cor da liberdade Os anos de presidencia.png" className="imagens" />
             </div>
 

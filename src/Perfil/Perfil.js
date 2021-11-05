@@ -50,7 +50,7 @@ function Perfil() {
         </div>
         <div className="meuperfil">
           <h1> Meu Perfil</h1>
-          <img className="circle" src="/images/Beth.jpg" alt="queen"></img>
+          <img className="circle" src="/images/nikole.jpg" alt="queen"></img>
         </div>
         <div className="detalhes">
           <h2> Detalhes </h2>
